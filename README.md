@@ -1,2 +1,4 @@
-# ginstagram_rails
-for 2018 new graduate engineer training
+# ginstagram\_rail
+
+For 2018 new graduate engineer training
+
