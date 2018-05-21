@@ -1,5 +1,5 @@
 <p>このページはマイページ（ユーザー詳細ページ）です。</p>
-<%= @user.email %>
+<%= "@" + @user.screen_name %>
 
 <% if user_signed_in? %>
   <p><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
