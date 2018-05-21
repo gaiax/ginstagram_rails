@@ -1,7 +1,8 @@
 <p>このページはマイページ（ユーザー詳細ページ）です。</p>
-<%= "@" + @user.screen_name %>
+<%= @user.name %><br />
+<%= "@" + @user.screen_name %><br />
 
-<%= link_to "編集", edit_user_registration_path %>
+<%= link_to "プロフィールを編集する", edit_user_registration_path %>
 
 <% if user_signed_in? %>
   <p><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
