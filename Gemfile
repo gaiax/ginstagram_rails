@@ -22,9 +22,15 @@ gem 'rmagick'
 group :development, :test do
   gem 'pry-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'rspec'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'capybara', '~> 2.13'
+  gem 'database_cleaner'
 end
 
 group :development do
