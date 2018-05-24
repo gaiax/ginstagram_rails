@@ -7,6 +7,7 @@ class User < ApplicationRecord
   validates :password, presence: true, format: { with: VALID_PASSWORD_REGEX }
   validates :screen_name, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
+  mount_uploader :avatar, AvatarUploader
 
   def self.find_first_by_auth_conditions(warden_conditions)
     conditions = warden_conditions.dup
