@@ -23,12 +23,12 @@ group :development, :test do
   gem 'pry-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'selenium-webdriver'
+  gem 'faker'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'factory_bot_rails'
-  gem 'faker'
   gem 'capybara', '~> 2.13'
   gem 'database_cleaner'
 end
