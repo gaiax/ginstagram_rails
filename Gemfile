@@ -31,6 +31,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'capybara', '~> 2.13'
   gem 'database_cleaner'
+  gem 'rails-controller-testing'
 end
 
 group :development do
