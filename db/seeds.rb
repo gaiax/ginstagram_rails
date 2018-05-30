@@ -26,7 +26,7 @@ end
 
 
 10.times do |n|
-  image = File.open("./public/assets/images/sample.jpg")
+  image = File.open("./public/images/sample.jpg")
   post_id = n + 1
   Image.create!(
     image: image,
