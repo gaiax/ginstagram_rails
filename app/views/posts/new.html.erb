@@ -1,0 +1,11 @@
+<p>ここが投稿ページ<p>
+
+<%= form_for @post do |f| %>
+  <%= f.label :image, "Please post your taked Photo!!" %><br />
+  <%= f.file_field :image %><br />
+
+  <%= f.label :description, "Description" %><br />
+  <%= f.text_area :description %><br />
+
+  <%= f.submit "Please Post!!"%>
+<% end %>
