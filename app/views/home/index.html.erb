@@ -1,4 +1,7 @@
-<p>ここにそのうちタイムラインを作成します。</p>
+<p>タイムライン</p>
 
-<!-- （仮実装中）投稿のuserIdの表示のユーザーのリンク　-->
-<%= link_to "@naoya3", "/users/4" %>
+<% @post.each do |post| %>
+  <%= link_to "@ #{post.user.screen_name}", user_path(post.user.id) %>
+  <%= post.description %><br />
+<% end %>
+

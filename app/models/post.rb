@@ -1,3 +1,4 @@
 class Post < ApplicationRecord
-  has_many :image, dependent: :delete_all
+  has_many :images, dependent: :delete_all
+  belongs_to :user
 end
