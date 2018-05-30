@@ -1,5 +1,13 @@
 <p>このページはマイページ（ユーザー詳細ページ）です。</p>
-<%= @user.email %>
+<%= @user.name %><br />
+<%= "@" + @user.screen_name %><br />
+
+<% if @user.avatar? %>
+　<%= image_tag @user.avatar %><br />
+<% end %>
+
+
+<%= link_to "プロフィールを編集する", edit_user_registration_path %>
 
 <% if user_signed_in? %>
   <p><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></p>
