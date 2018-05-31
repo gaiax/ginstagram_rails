@@ -16,7 +16,7 @@ if Rails.env == 'development'
     )
   end
 
-  10.times do |n|
+  100.times do |n|
     description = Faker::Lorem.sentence
     user_id = rand(1..5)
     Post.create!(
@@ -25,7 +25,7 @@ if Rails.env == 'development'
     )
   end
 
-  10.times do |n|
+  100.times do |n|
     image = File.open("./public/images/sample.jpg")
     post_id = n + 1
     Image.create!(
