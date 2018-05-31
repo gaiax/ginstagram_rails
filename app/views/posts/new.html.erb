@@ -2,7 +2,8 @@
 
 <%= form_for @post do |f| %>
   <%= f.label :image, "Please post your taked Photo!!" %><br />
-  <%= f.fields_for :images do |image_form| %>
+
+  <%= f.fields_for :images do |image_form| %><br />
     <%= image_form.file_field :image %><br />
   <% end %>
 

@@ -6,11 +6,11 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if @post.save
+    if !@post.images.empty? && @post.save
       redirect_to root_path, notice: '投稿が完了しました'
     else
       flash.now[:alert] = "投稿が失敗しました"
-      render :new
+      render new_post_path
     end
   end
 
