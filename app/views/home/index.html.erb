@@ -2,8 +2,8 @@
 <%= link_to "投稿する", new_post_path %><br />
 
 <% @post.each do |post| %>
-  <%= link_to "@ #{post.user.screen_name}", user_path(post.user.id) %>
+  <%= link_to "@ #{post.user.screen_name}", user_path(post.user.id) %><br />
+  <%= image_tag(post.images.first.image) %><br />
   <%= post.description %><br />
-  <%= "#{post.images.pluck(:image)} ここは投稿画像です(仮)" %><br />
   <%= post.created_at.strftime('%Y年%m月%d日%H時%M分') %><br />
 <% end %>
