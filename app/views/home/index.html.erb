@@ -1,4 +1,5 @@
 <p>タイムライン</p>
+<%= link_to "投稿する", new_post_path %><br />
 
 <% @post.each do |post| %>
   <%= link_to "@ #{post.user.screen_name}", user_path(post.user.id) %>

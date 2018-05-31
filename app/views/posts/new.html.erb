@@ -2,7 +2,9 @@
 
 <%= form_for @post do |f| %>
   <%= f.label :image, "Please post your taked Photo!!" %><br />
-  <%= f.file_field :image %><br />
+  <%= f.fields_for :images do |image_form| %>
+    <%= image_form.file_field :image %><br />
+  <% end %>
 
   <%= f.label :description, "Description" %><br />
   <%= f.text_area :description %><br />
