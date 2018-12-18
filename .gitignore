@@ -21,3 +21,8 @@
 /vendor/ruby
 
 .ruby-version
+
+*.png
+*.jpeg
+*.jpg
+*.gif
