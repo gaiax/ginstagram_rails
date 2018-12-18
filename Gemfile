@@ -18,6 +18,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'carrierwave'
 gem 'rmagick'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'jquery-rails'
 
 group :development, :test do
   gem 'pry-rails'
